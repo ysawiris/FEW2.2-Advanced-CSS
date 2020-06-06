@@ -1,0 +1,53 @@
+<div>
+    <div class="box">
+      <div></div>
+      <div></div>
+    </div>
+    <span>Hamburger 1</span>
+</div>
+
+<style>
+    .box {
+        border: solid 1px black;
+        width: 100px;
+        height: 100px;
+        transition: 200ms;
+    }
+
+    .box > div {
+        width: 60px;
+        height: 10px;
+        background-color: black;
+        position: absolute;
+    }
+    .box>div:nth-child(1) {
+        transform: translate(20px, 35px) rotate(0);
+        transition: 200ms;
+    }
+      
+    .box>div:nth-child(2) {
+        transform: translate(20px, 55px) rotate(0);
+        transition: 200ms;
+    }
+    /* On a hover */
+    
+    .box:hover {
+    /* Change the background color to black */
+        background-color: black;
+    }
+    
+    .box:hover>div {
+    /* Change the background of the X to white */
+        background-color: white;
+    }
+    /* Translate and rotate the inner divs to make an X */
+    
+    .box:hover>div:nth-child(1) {
+        transform: translate(20px, 45px) rotate(45deg);
+    }
+    
+    .box:hover>div:nth-child(2) {
+        transform: translate(20px, 45px) rotate(-45deg);
+    }
+</style>
+
