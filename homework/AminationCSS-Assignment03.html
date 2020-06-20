@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Hamburger X 2 -->
+    <div>
+      <div class="a">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <span>Hamburger 2</span>
+    </div>
+
+    <!-- Hamburger X 3 -->
+    <div>
+      <div class="b">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <span>Hamburger 3</span>
+    </div>
+
+
+    <!-- Hamburger 4 -->
+    <div>
+      <div class="c">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <span>Hamburger 4</span>
+    </div>
+  </div>
+  
+  <style>
+    /* STYLE ITEMS IN GRID */
+    .container {
+      display: grid;
+      padding: 2em;
+      grid-template-columns: auto auto auto;
+    }
+    
+    /* HAMBURER 2 */
+    .a {
+      border: solid 1px black;
+      width: 100px;
+      height: 100px;
+      transition: 200ms;
+    }
+    
+    .a>div {
+      width: 60px;
+      height: 10px;
+      background-color: black;
+      position: absolute;
+    }
+    
+    .a>div:nth-child(1) {
+      transform: translate(20px, 25px) rotate(0);
+      transition: 200ms;
+    }
+    
+    .a>div:nth-child(2) {
+      opacity: 1;
+      transform: scale(1, 1) translate(20px, 45px) rotate(0);
+      transition: 200ms;
+    }
+    
+    .a>div:nth-child(3) {
+      transform: translate(20px, 65px) rotate(0);
+      transition: 200ms;
+    }
+    
+    .a:hover {
+      background-color: black;
+    }
+    
+    .a:hover>div {
+      background-color: white;
+    }
+    /* ANIMATION FOR THE BARS */
+    
+    .a:hover>div:nth-child(1) {
+      transform: translate(20px, 45px) rotate(45deg);
+    }
+    
+    
+    .a:hover>div:nth-child(2) {
+      opacity: 0;
+      transform: scale(0, 1) translate(20px, 45px) rotate(0);
+    }
+    
+    .a:hover>div:nth-child(3) {
+      transform: translate(20px, 45px) rotate(-45deg);
+    }
+    
+    /* HAMBURGER 3 */
+    .b {
+      border: solid 1px black;
+      width: 100px;
+      height: 100px;
+      transition: 200ms;
+    }
+    
+    .b>div {
+      width: 60px;
+      height: 10px;
+      background-color: black;
+      position: absolute;
+    }
+    
+    .b>div:nth-child(1) {
+      transform: translate(20px, 25px) rotate(0);
+      transition: 200ms;
+    }
+    
+    .b>div:nth-child(2) {
+      opacity: 1;
+      transform: scale(1, 1) translate(20px, 45px) rotate(0);
+      transition: 200ms;
+    }
+    
+    .b>div:nth-child(3) {
+      transform: translate(20px, 65px) rotate(0);
+      transition: 200ms;
+    }
+    
+    .b:hover {
+      background-color: black;
+    }
+    
+    .b:hover>div {
+      background-color: white;
+    }
+    
+    .b:hover>div:nth-child(1) {
+      width: 53px;
+      transform: translate(10px, 30px) rotate(-45deg);
+    }
+    
+    .b:hover>div:nth-child(2) {
+      transform: translate(20px, 45px) rotate(0);
+    }
+    
+    .b:hover>div:nth-child(3) {
+      width: 53px;
+      transform: translate(10px, 60px) rotate(45deg);
+    }
+    
+
+    /* HAMBURGER 4 */
+    .c {
+      border: solid 1px black;
+      width: 100px;
+      height: 100px;
+      transition: 200ms;
+    }
+    
+    .c>div {
+      width: 60px;
+      height: 10px;
+      background-color: black;
+      position: absolute;
+    }
+    
+    .c>div:nth-child(1) {
+      transform: translate(20px, 25px) rotate(0);
+      transition: 200ms;
+    }
+    
+    .c>div:nth-child(2) {
+      border: none;
+      border-radius: 0;
+      transform: translate(20px, 45px);
+      transition: 200ms;
+    }
+    
+    .c>div:nth-child(3) {
+      transform: translate(20px, 65px) rotate(0);
+      transition: 200ms;
+    }
+    
+    .c:hover {
+      background-color: black;
+    }
+    
+    .c:hover>div {
+      background-color: white;
+    }
+    
+    .c:hover>div:nth-child(1) {
+      width: 50px;
+      transform: translate(25px, 45px) rotate(45deg);
+    }
+    /* CHANHING BAR TO CIRCLE */
+    
+    .c:hover>div:nth-child(2) {
+      width: 60px;
+      height: 60px;
+      background-color: transparent;
+      border: 10px solid white;
+      border-radius: 50%;
+      transform: translate(10px, 10px);
+    }
+    
+    .c:hover>div:nth-child(3) {
+      width: 50px;
+      transform: translate(25px, 45px) rotate(-45deg);
+    }
+
+  </style>
+
+    
+</body>
+</html>
