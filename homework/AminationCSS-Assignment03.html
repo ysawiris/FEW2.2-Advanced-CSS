@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ANIMATION with CSS</title>
 </head>
 <body>
   <div class="container">
+    <!-- Blue Button -->
+    <div class="blue">
+      <span>Hello</span>
+    </div>
+
     <!-- Hamburger X 2 -->
     <div>
       <div class="a">
@@ -27,7 +32,6 @@
       <span>Hamburger 3</span>
     </div>
 
-
     <!-- Hamburger 4 -->
     <div>
       <div class="c">
@@ -45,6 +49,23 @@
       display: grid;
       padding: 2em;
       grid-template-columns: auto auto auto;
+    }
+    
+    /* Blue Button */
+    .blue {
+      height: 20px;
+      width: 125px;
+      padding: 2em;
+      color: white;
+      background-color: #008fc1;
+      border-radius: 25px;
+      text-align: center;
+      transition: 330ms;
+    }
+    .blue:hover{
+      border: 3px solid #008fc1;
+      color: #008fc1;
+      background-color: transparent;
     }
     
     /* HAMBURER 2 */
@@ -85,8 +106,8 @@
     .a:hover>div {
       background-color: white;
     }
+  
     /* ANIMATION FOR THE BARS */
-    
     .a:hover>div:nth-child(1) {
       transform: translate(20px, 45px) rotate(45deg);
     }
@@ -153,7 +174,6 @@
       width: 53px;
       transform: translate(10px, 60px) rotate(45deg);
     }
-    
 
     /* HAMBURGER 4 */
     .c {
@@ -199,6 +219,7 @@
       width: 50px;
       transform: translate(25px, 45px) rotate(45deg);
     }
+
     /* CHANHING BAR TO CIRCLE */
     
     .c:hover>div:nth-child(2) {
@@ -214,7 +235,6 @@
       width: 50px;
       transform: translate(25px, 45px) rotate(-45deg);
     }
-
   </style>
 
     
