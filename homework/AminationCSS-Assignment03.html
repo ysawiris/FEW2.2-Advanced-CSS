@@ -51,11 +51,19 @@
       </div>
       <span>Hamburger 4</span>
     </div>
-  </div>
 
-  <!-- CAT -->
-  <div class="cat">
-    <img src="./images/kitten-domo.jpg" alt="cat">
+    <!-- CAT -->
+    <div class="cat">
+      <img src="./images/kitten-domo.jpg" alt="cat">
+    </div>
+
+    <!-- DOMO CAT -->
+    <div class="domo">
+      <img src="./images/kitten-domo.jpg" alt="cat">
+      <span>Domo Kitten</span>
+    </div>
+
+
   </div>
 
   
@@ -294,14 +302,13 @@
       width: 50px;
       transform: translate(25px, 45px) rotate(-45deg);
     }
-    
+
     /* Jumping Cat */
     .cat {
       height: 200px;
       width: 200px;
       border: 1px solid;
       overflow: hidden;
-      position: relative;
     }
 
     .cat > img {
@@ -314,6 +321,42 @@
     .cat:hover > img {
       transform: translate(-20%, -20%) scale(1.25) rotate(15deg);
     }
+
+    /* Domo Kitten Text */
+    .domo {
+      height: 200px;
+      width: 200px;
+      border: 1px solid;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .domo > img {
+      height: 400px;
+      width: 400px;
+      transform: translate(-20%, -20%) scale(0.75) rotate(0deg);
+      transition: 300ms;
+    }
+
+    .domo > span {
+      position: absolute;
+      background-color: white;
+      right: -220px;
+      bottom: 10px;
+      padding: 1rem 2rem;
+      clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 99%, 5% 50%);
+    }
+
+    .domo:hover > span {
+      right: -20px;
+      transition: 700ms;
+      transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    }
+
+    .domo:hover > img {
+      transform: translate(-20%, -20%) scale(1.25) rotate(15deg);
+    }
+
   </style>
 
     
