@@ -17,6 +17,11 @@
       <span>Hello</span>
     </div>
 
+    <!-- White Button -->
+    <div class="white">
+      <span>Hello</span>
+    </div>
+
     <!-- Hamburger X 2 -->
     <div>
       <div class="a">
@@ -50,6 +55,9 @@
   
   <style>
     /* STYLE ITEMS IN GRID */
+    * {
+      margin: auto;
+    }
     .container {
       display: grid;
       padding: 2em;
@@ -92,13 +100,33 @@
       border-bottom: 3px solid #008fc1;
       letter-spacing: 10px;
     }
-    
+
+    /* White Button */
+    .white {
+      height: 20px;
+      width: 125px;
+      padding: 2em;
+      color: white;
+      background-color: transparent;
+      border: 3px solid #008fc1;
+      border-radius: 25px;
+      text-align: center;
+      transition: 330ms;
+    }
+
+    .white:hover{
+      background-color: #008fc1;
+      color: white;
+    }
+
     /* HAMBURER 2 */
     .a {
       border: solid 1px black;
       width: 100px;
       height: 100px;
       transition: 200ms;
+      margin-top: 30px;
+      
     }
     
     .a>div {
