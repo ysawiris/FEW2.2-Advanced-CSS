@@ -52,6 +52,12 @@
       <span>Hamburger 4</span>
     </div>
   </div>
+
+  <!-- CAT -->
+  <div class="cat">
+    <img src="./images/kitten-domo.jpg" alt="cat">
+  </div>
+
   
   <style>
     /* STYLE ITEMS IN GRID */
@@ -287,6 +293,26 @@
     .c:hover>div:nth-child(3) {
       width: 50px;
       transform: translate(25px, 45px) rotate(-45deg);
+    }
+    
+    /* Jumping Cat */
+    .cat {
+      height: 200px;
+      width: 200px;
+      border: 1px solid;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .cat > img {
+      height: 400px;
+      width: 400px;
+      transform: translate(-20%, -20%) scale(0.75) rotate(0deg);
+      transition: 300ms;
+    }
+
+    .cat:hover > img {
+      transform: translate(-20%, -20%) scale(1.25) rotate(15deg);
     }
   </style>
 
